@@ -15,7 +15,7 @@ def log_stats(mongo_collection):
     print("Methods:")
 
     for req in methods:
-        print('\tmethods {}: {}'.format(req,
+        print('\tmethod {}: {}'.format(req,
               collection.count_documents({'method': req})))
 
     print('{} status check'.format(collection.count_documents(
