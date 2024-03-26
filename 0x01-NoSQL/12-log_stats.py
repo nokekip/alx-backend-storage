@@ -5,7 +5,7 @@
 from pymongo import MongoClient
 
 
-def log_stats(mongo_collection):
+def log_stats():
     """ Prints the log stats in nginx collection """
     con = MongoClient('mongodb://localhost:27017')
     collection = con.logs.nginx
