@@ -20,3 +20,7 @@ def log_stats(mongo_collection):
 
     print('{} status check'.format(collection.count_documents(
           {'method': 'GET', 'path': '/status'})))
+
+
+if __name__ == "__main__":
+    log_stats()
